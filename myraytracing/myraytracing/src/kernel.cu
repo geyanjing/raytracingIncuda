@@ -339,7 +339,7 @@ int main() {
 	stop = clock();
 	double timer_seconds = ((double)(stop - start)) / CLOCKS_PER_SEC;
 	std::cerr << "took " << timer_seconds << " seconds.\n";
-	//checkCudaErrors(cudaMemcpy(world, d_world, 1000 * sizeof(bvh_node), cudaMemcpyDeviceToHost));
+
 	checkCudaErrors(cudaMemcpy(cam, d_camera, sizeof(camera), cudaMemcpyDeviceToHost));
 	// Output FB as Image
 	std::ofstream fout(".\\result\\bvh.ppm");

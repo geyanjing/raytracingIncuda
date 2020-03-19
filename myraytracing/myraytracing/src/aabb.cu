@@ -9,7 +9,7 @@ __device__ bool aabb::hit(const ray& r, float tmin, float tmax) const {
 		if (invD < 0.0f) {
 			float t = t0; t0 = t1; t1 = t;
 		}
-		//std::swap(t0, t1);
+		//std::swap(t0, t1);8
 		tmin = t0 > tmin ? t0 : tmin;
 		tmax = t1 < tmax ? t1 : tmax;
 		if (tmax <= tmin) {

@@ -44,7 +44,7 @@ bvh_node* random_scene() {
 	list[i++] = new sphere(vec3(-4, 1, 0), 1.0, new material(lambertian, b));
 	list[i++] = new sphere(vec3(4, 1, 0), 1.0, new material(metal, c));
 
-	//return new hittable_list(list, i);
+	//return new hittable_list(list, i)
 
 	return BuildBVH(list, i, 0.0, 0.0);
 }

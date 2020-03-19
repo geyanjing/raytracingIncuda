@@ -36,7 +36,7 @@ public:
 	//bool leaf = true;
 };
 
-//运动模糊的球类
+//运动模糊的球
 //class moving_sphere  {
 //public:
 //	moving_sphere() {}

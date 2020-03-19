@@ -1,6 +1,5 @@
 #include "sphere.h"
 
-
 __device__ bool sphere::hit(const ray& r, float t_min, float t_max, hit_record& rec) const {
 	vec3 oc = r.origin() - center;
 	float a = dot(r.direction(), r.direction());
@@ -27,7 +26,7 @@ __device__ bool sphere::hit(const ray& r, float t_min, float t_max, hit_record& 
 	}
 	return false;
 }
-
+//000
 //__device__  bool moving_sphere::hit(
 //	const ray& r, float t_min, float t_max, hit_record& rec) const {
 //	vec3 oc = r.origin() - center(r.time());
