@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{6f03aa86-db54-451e-8abd-352355cbb225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp">
+      <UniqueIdentifier>{120c94ba-72ba-445d-9e0b-4ab6b7ec76be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\aabb.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\camera.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hittable.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\material.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\myhit.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bvh_node.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\random.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sphere.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vec3.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ray.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="src\aabb.cu">
+      <Filter>cpp</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\sphere.cu">
+      <Filter>cpp</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

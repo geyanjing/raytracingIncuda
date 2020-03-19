@@ -55,6 +55,7 @@
     </Link>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
+      <GenerateRelocatableDeviceCode>true</GenerateRelocatableDeviceCode>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -74,10 +75,26 @@
     </Link>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
+      <GenerateRelocatableDeviceCode>true</GenerateRelocatableDeviceCode>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CudaCompile Include="kernel.cu" />
+    <ClInclude Include="src\aabb.h" />
+    <ClInclude Include="src\bvh_node.h" />
+    <ClInclude Include="src\camera.h" />
+    <ClInclude Include="src\hittable.h" />
+    <ClInclude Include="src\material.h" />
+    <ClInclude Include="src\myhit.h" />
+    <ClInclude Include="src\random.h" />
+    <ClInclude Include="src\ray.h" />
+    <ClInclude Include="src\scene.h" />
+    <ClInclude Include="src\sphere.h" />
+    <ClInclude Include="src\vec3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="src\aabb.cu" />
+    <CudaCompile Include="src\kernel.cu" />
+    <CudaCompile Include="src\sphere.cu" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
